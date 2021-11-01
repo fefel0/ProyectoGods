@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rajdhani', sans-serif; }
+
+html {
+  font-size: 70%; }
+
+body {
+  background-color: #f5f5ef;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.5rem; }
+
+h1 {
+  font-size: 4; }
+
+h2 {
+  font-size: 3; }
+
+h3 {
+  font-size: 2; }
+
+h1 {
+  color: #001D3D;
+  text-align: center;
+  text-transform: uppercase; }
+
+h2 {
+  color: #003566;
+  text-align: center;
+  text-transform: uppercase; }
+
+h3 {
+  color: #003566;
+  text-align: center;
+  text-transform: uppercase; }
+
+p {
+  color: #000814;
+  text-align: center;
+  text-transform: uppercase; }
+
+.headerNav {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem; }
+
+img {
+  max-width: 100%; }
+
+.headerNav__imagenes {
+  display: flex; }
+
+.headerNav__logo {
+  display: flex;
+  width: 30rem; }
+
+.headerNav__banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  left: 10rem; }
+
+.navegador__items {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 100%;
+  background-color: #003566;
+  height: 5rem;
+  align-items: center;
+  text-transform: uppercase; }
+  .navegador__items a {
+    font-size: 2rem;
+    font-weight: 2rem; }
+  .navegador__items li a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.6rem;
+    width: 0%;
+    background-color: #ffd60a;
+    transition: all ease-in-out 250ms; }
+  .navegador__items li a:hover::after {
+    width: 8%; }
+  .navegador__items li a:hover {
+    color: #ffd60a; }
+
+/*  ---lista desplegable hoodies--- */
+ul li {
+  list-style: none; }
+
+.navHoodies {
+  position: relative; }
+
+.navHoodies ul {
+  position: absolute;
+  display: none;
+  left: -6rem;
+  text-align: center; }
+
+.navHoodies:hover > ul {
+  display: block;
+  z-index: 100; }
+
+.navHoodies ul li {
+  background-color: #003566;
+  color: #ffd60a;
+  padding: 1rem; }
+
+/*  ---main--- */
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+
+.info__video {
+  margin: 5rem auto;
+  display: grid; }
+
+.info__texto {
+  margin: 5rem 5rem; }
+
+.info__imagen {
+  margin: auto;
+  width: 75%;
+  display: grid; }
+
+.info__titulo {
+  font-size: 3rem;
+  margin: 1rem auto; }
+
+.info__titulo--dorado {
+  color: #ffd60a; }
+
+.info__parrafo {
+  color: #ffd60a;
+  font-size: 2rem; }
+
+.info__titulo--azul {
+  color: #003566; }
+
+.info__parrafo--azul {
+  color: #003566;
+  font-size: 2rem; }
+
+/*  ---footer--- */
+a {
+  color: whitesmoke;
+  text-decoration: none; }
+
+.pie {
+  background-color: #003566;
+  height: 15rem; }
+
+.pie__barra {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase; }
+  .pie__barra a:hover {
+    color: #ffd60a;
+    font-size: 1rem;
+    transition: ease-in-out 200ms; }
+
+.pie__redes {
+  display: flex;
+  align-content: flex-end;
+  text-transform: uppercase;
+  justify-content: space-around;
+  align-content: flex-start;
+  margin: 3.5rem; }
+  .pie__redes i {
+    font-size: 4rem; }
+
+.pie__texto {
+  display: flex;
+  justify-content: flex-end; }
+  .pie__texto h6 {
+    color: #ffd60a;
+    text-transform: uppercase; }
+
+.pie__link--instagram:hover {
+  color: #DD2A7B; }
+
+.pie__link--twitter:hover {
+  color: #00acee; }
+
+.pie__link--maps:hover {
+  color: #bbdaa4; }
+
+/*  ---Pagina Hoodies--- */
+.colorProductos {
+  color: #003566;
+  text-transform: uppercase;
+  text-align: center; }
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr); }
+
+.productos__contenedor {
+  margin: 2rem auto;
+  background-color: #003566;
+  padding: 1rem; }
+
+.productos__info {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase; }
+  .productos__info p {
+    color: #ffd60a; }
+.productos__boton {
+  display: flex;
+  justify-content: center;
+}
+.productos__boton--estilo {
+  background-color: #ffd60a;
+  text-transform: uppercase;
+  border: none;
+}
+/*  ---Pagina Sneakers--- */
+.sneakers {
+  text-align: center;
+  text-transform: uppercase; }
+
+.zapatillas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr); }
+
+.zapatillas__contenedor {
+  margin: 1rem auto;
+  background-color: #003566;
+  padding: 3rem;
+  width: 50%; }
+
+.zapatillas__info {
+  font-size: 2rem;
+  color: #ffd60a;
+  text-align: center;
+  text-transform: uppercase; }
+  .zapatillas__info p {
+    color: #ffd60a; }
+
+/* ---Destacado--- */
+.principalNov__titulo {
+  color: #003566;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center; }
+
+.principalNov__tituloNov {
+  color: #003566;
+  text-align: center;
+  text-transform: uppercase; }
+
+.articulos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.cntDestacado {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around; }
+
+.articulos__contenedor {
+  margin: 2rem auto;
+  background-color: #003566;
+  padding: 1rem;
+  width: 30rem;
+  text-align: center; }
+
+.articulos__info {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase; }
+  .articulos__info p {
+    color: #ffd60a; }
+
+.mdlcolor {
+  background-color: #003566;
+  color: #ffd60a; }
+
+.btnArticulo {
+  background-color: #ffd60a;
+  color: white; }
+
+/* ---contacto--- */
+.cajaContacto {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 5rem;
+  justify-content: center; }
+
+.cajaContacto__imagen {
+  position: relative; }
+  .cajaContacto__imagen img {
+    position: relative; }
+
+.cajaContacto__formulario {
+  background-color: #003566;
+  color: #ffd60a;
+  text-align: center;
+  width: 30%; }
+
+.cajaContacto__dato {
+  width: 100%;
+  margin: 0.5rem 0;
+  position: relative; }
+  .cajaContacto__dato input, .cajaContacto__dato textarea {
+    padding: 0.1rem 0;
+    margin: 0.1rem 0;
+    border: none;
+    width: 60%; }
+
+.cajaContacto__mensaje {
+  padding: 0.1rem 0;
+  margin: 0.1rem 0;
+  border: none; }
+
+span {
+  display: block; }
+
+.boton {
+  height: 50px;
+  width: 50px;
+  font-family: 'Rajdhani', sans-serif;
+  color: #ffd60a;
+  background-color: #001D3D; }
+
+.boton:hover {
+  height: 80px;
+  width: 180px;
+  border-radius: 50%;
+  background-color: #1154c7;
+  color: #ffd60a;
+  text-transform: uppercase;
+  font-family: 'Rajdhani', sans-serif;
+  transition-duration: 1.5s; }
+/*---pag404---*/
+.texto__pag404 {
+  font-size: 5rem;
+  color: #ffd60a;
+  margin-top: 10rem;
+}
+.texto__caraTriste {
+  font-size: 20rem;
+  text-align: center;
+  color: #001D3D;
+}
+.texto__pagNotFound {
+  font-size: 6rem;
+  color: #ffd60a;
+}
+.boton__pag404 {
+  display: flex;
+  justify-content: center;
+}
+.boton__pag404--color {
+  background-color:#001D3D ;
+  color: #ffd60a;
+  width: 20rem;
+  height: 4rem;
+  margin-top: 5rem;
+}
+

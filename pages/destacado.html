@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destacado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="headerNav">
+        <div class="headerNav__imagenes">
+            <div class="headerNav__logo">
+                <img src="../media/iconoshop.gif" alt="logo god">
+            </div>
+            <div class="headerNav__banner">
+                <img src="../media/banner.png" alt="banner god">
+            </div>
+        </div>
+        <nav class="navegador">
+            <ul class="navegador__items">
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="destacado.html">destacado</a></li>
+                <li><a href="hoodies.html">hoodies</a></li>
+                <li><a href="sneakers.html">sneakers</a></li>
+                <li><a href="contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principalNov">
+        <h1 class="principalNov__titulo">Productos destacados</h1>
+        <p>Aca podras encontrar los mejores productos, los mas novedosos, los ultimos lanzamientos y tambien los mejores precios y ofertas.</p>
+        <div class="tamañoCarrusel">
+            <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../media/carrousel1.jpg" class="d-block w-30" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/carrousel2.jpg" class="d-block w-30" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/carrousel3.jpg" class="d-block w-30" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <h2 class="principalNov__tituloNov">novedades de la tienda</h2>
+        <p>Aca estan nuestros ultimos lanzamientos de la season 2 de gods. podes adquirirlos de nuestra pagina o encontrarlo en tu sucursal mas cercana</p>
+
+        <div class="articulos">
+            <div class="articulos__contenedor">
+                <img src="https://cdn-images.farfetch-contents.com/12/97/01/16/12970116_21956326_1000.jpg">
+                <div class="articulos__info">
+                    <p>
+                        Givenchy nylon logo back pack
+                    </p>
+                </div>
+                <button type="button" class="btn btn-primary btnArticulo" data-bs-toggle="modal" data-bs-target="#Modal0">
+                    Ver Articulo
+                </button>
+            </div>
+            <div class="modal fade" id="Modal0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header mdlcolor">
+                            <h5 class="modal-title" id="exampleModalLabel">Givenchy nylon logo back pack</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://cdn-images.farfetch-contents.com/12/97/01/16/12970116_21956326_1000.jpg" alt="">
+                            <p>Mochila givenchy logo + paris back mod. 2021</p>
+                        </div>
+                        <div class="modal-footer mdlcolor">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articulos__contenedor">
+                <img src="https://cdn-images.farfetch-contents.com/17/22/29/67/17222967_35278716_1000.jpg">
+                <div class="articulos__info">
+                    <p>
+                        A BATHING APE® Classic Type 1 BAPEX® 40mm
+                    </p>
+                </div>
+                <button type="button" class="btn btn-primary btnArticulo" data-bs-toggle="modal" data-bs-target="#Modal1">
+                    Ver Articulo
+                </button>
+            </div>
+            <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header mdlcolor">
+                            <h5 class="modal-title" id="exampleModalLabel">A BATHING APE® Classic</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://cdn-images.farfetch-contents.com/17/22/29/67/17222967_35278716_1000.jpg" alt="">
+                            <p>Reloj A BATHING APE® calidad premium 40mm muñeca</p>
+                        </div>
+                        <div class="modal-footer mdlcolor">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articulos__contenedor">
+                <img src="https://cdn-images.farfetch-contents.com/14/66/68/68/14666868_23388348_1000.jpg">
+                <div class="articulos__info">
+                    <p>
+                        Polo Ralph Lauren logo-embroidered cotton cap
+                    </p>
+                </div>
+                <button type="button" class="btn btn-primary btnArticulo" data-bs-toggle="modal" data-bs-target="#Modal2">
+                    Ver Articulo
+                </button>
+            </div>
+            <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header mdlcolor">
+                            <h5 class="modal-title" id="exampleModalLabel">Polo Ralph Lauren logo-embroidered cotton cap</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://cdn-images.farfetch-contents.com/14/66/68/68/14666868_23388348_1000.jpg" alt="">
+                            <p>Gorra Polo Ralph Lauren unisex calidad premium</p>
+                        </div>
+                        <div class="modal-footer mdlcolor">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer class="pie">
+        <div class="pie__barra">
+            <a href="../index.html">inicio</a>
+            <a href="destacado.html">Destacado</a>
+            <a href="hoodies.html">hoodies</a>
+            <a href="sneakers.html">sneakers</a>
+            <a href="contacto.html">contacto</a>
+        </div>
+        <div class="pie__redes">
+            <a class="pie__link--instagram" href="https://www.instagram.com/shopsgods/"><i class='bx bxl-instagram'></i></a>
+        <a class="pie__link--twitter" href="https://twitter.com/"><i class='bx bxl-twitter' ></i></a>
+        <a class="pie__link--maps" href="https://www.google.com.ar/maps/place/Villa+del+Totoral,+C%C3%B3rdoba/@-30.7081422,-64.1045078,13z/data=!3m1!4b1!4m5!3m4!1s0x943251cbe0c28541:0x8057f1e4576e7625!8m2!3d-30.7060508!4d-64.0675449"><i class='bx bx-map-alt'></i></a>
+        </div>
+        <div class="pie__texto">
+            <h6>Copyright © 2020-2021 God´s S.R.L.</h6>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
