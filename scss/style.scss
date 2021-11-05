@@ -85,6 +85,14 @@ img{
         color:#ffd60a;
     }
 }
+@media (max-width: 1024px){
+    .headerNav__logo {
+        display: none;
+    }
+}
+    
+
+
 /*  ---lista desplegable hoodies--- */
 
 ul li {
@@ -116,14 +124,22 @@ ul li {
     }
     .info__video {
         margin: 5rem auto;
-        display: grid
+        position: flex;
+        text-align: center;
+        width: 90%;
+        & iframe{
+            width: 100%;
+            height: 100%;   
+        }
     }
     .info__texto {
         margin: 5rem 5rem;
     }
     .info__imagen{
-        margin: auto; width: 75%;
-        display: grid;
+        margin: auto;
+        width: 90%;
+        text-align: center;
+        display: flex;
     }
     .info__titulo{
         font-size: 3rem;
@@ -143,6 +159,19 @@ ul li {
         color:#003566 ;
         font-size: 2rem;
     }
+    @media (max-width: 1024px){
+        .info {
+            grid-template-columns: repeat(1,1fr); 
+            grid-template-rows: repeat(4,1fr); 
+        }
+        & iframe{
+            width: 50%;
+            height: 50%;   
+        }
+    }
+    @media (max-width: 580px){
+        
+    }
 
 /*  ---footer--- */
 a{
@@ -159,7 +188,7 @@ a{
     text-transform: uppercase;
     & a:hover{
         color:#ffd60a;
-        font-size: 1rem;
+        font-size: 1.8rem;
         transition:  200ms;
     }
 }
@@ -217,6 +246,30 @@ $redes:(
         color:#ffd60a; 
     }
 }
+.productos__boton{
+    text-align: center;
+}
+.productos__boton--estilo{
+    background-color: #ffd60a;
+    font-size: 2rem;
+    width: 70%;
+    height: 15%;
+}
+.productos__boton--estilo:hover{
+    color:whitesmoke;
+    text-transform: uppercase;
+    font-size: 3rem;
+    width: 75%;
+    height: 25%;
+    transition-duration: 250ms;
+    transition-delay: 100ms;
+}
+@media (max-width: 1024px){
+    .productos{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    }
+}
 /*  ---Pagina Sneakers--- */
 .sneakers {
     text-align: center; 
@@ -231,7 +284,11 @@ $redes:(
     margin: 1rem auto; 
     background-color: #003566 ; 
     padding: 3rem; 
-    width: 50%;
+    width: 30rem;
+    text-align: center;
+    & img{
+        width: 30rem;
+    }
 }
 .zapatillas__info{
     font-size: 2rem; 
@@ -240,6 +297,23 @@ $redes:(
     text-transform: uppercase;
     & p {
         color:#ffd60a; 
+    }
+}
+.zapatillas__box{
+    height: 25rem;
+}
+@media (max-width: 1024px){
+    .zapatillas{
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+@media (max-width: 685px){
+    .zapatillas{
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
     }
 }
 /* ---Destacado--- */
@@ -287,7 +361,6 @@ $redes:(
     background-color: #ffd60a;
     color:white; 
 }
-
 /* ---contacto--- */
 .cajaContacto {
     display: flex; 
@@ -327,20 +400,25 @@ span {
     display: block;
 }
 .boton{
-    height: 50px;
-    width: 50px;
+    height: 50%;
+    width: 70%;
     font-family: 'Rajdhani', sans-serif; 
     color:#ffd60a ;
     background-color:#001D3D ;
 }
 .boton:hover{
-    height: 80px;
-    width: 180px;
-    border-radius: 50%;
-    background-color:#1154c7 ;
+    height:100%;
+    width: 90%;
+    background-color:#001D3D ;
     color:#ffd60a ;
     text-transform: uppercase;
     font-family: 'Rajdhani', sans-serif; 
     transition-duration: 1.5s;
 }
+@media (max-width: 1024px){
+    .cajaContacto__imagen{
+        display: none;
+    }
+}
+
 
