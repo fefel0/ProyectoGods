@@ -23,14 +23,18 @@
                 <img src="../media/banner.png" alt="banner god">
             </div>
         </div>
-        <nav class="navegador">
-            <ul class="navegador__items">
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="destacado.html">destacado</a></li>
-                <li><a href="hoodies.html">hoodies</a></li>
-                <li><a href="sneakers.html">sneakers</a></li>
-                <li><a href="contacto.html">contacto</a></li>
-            </ul>
+        <nav>
+            <div class="navegador">
+                <input type="checkbox" id="btn-menu" class="nav__ico">
+                <label class="nav__ico" for="btn-menu"><i class='bx bx-menu bx-flip-horizontal' style='color:#ffffff' ></i></label>
+                <ul class="navegador__items">
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="destacado.html">destacado</a></li>
+                    <li><a href="hoodies.html">hoodies</a></li>
+                    <li><a href="sneakers.html">sneakers</a></li>
+                    <li><a href="contacto.html">contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -42,23 +46,20 @@
                     <img src="../media/imgcontacto.jpg">
                 </div>
                 <div class="cajaContacto__formulario">
-                    <form>
+                    <form action="https://formspree.io/f/xwkadwnr"
+                    method="POST">
                         <h3>Enviame un mensaje</h3>
                         <div class="cajaContacto__dato">
-                            <input type="text" required="required">
+                            <input type="text" required="required" name="name">
                             <span>Tu Nombre</span>
                         </div>
                         <div class="cajaContacto__dato">
-                            <input type="email" required="required">
+                            <input type="email" required="required" name="_replyto">
                             <span>Tu Mail</span>
                         </div>
                         <div class="cajaContacto__dato">
-                            <input type="tel" required="required">
-                            <span>Tu Telefono</span>
-                        </div>
-                        <div class="cajaContacto__dato">
                             <textarea class="cajaContacto__mensaje" required="required"
-                                placeholder="Escriba un mensaje"></textarea>
+                                placeholder="Escriba un mensaje" name="message"></textarea>
                             <span>Mensaje</span>
                         </div>
                         <div class="cajaContacto__dato">
@@ -78,11 +79,10 @@
             <a href="contacto.html">contacto</a>
         </div>
         <div class="pie__redes">
-            <a class="pie__link--instagram" href="https://www.instagram.com/shopsgods/"><i
+            <a class="pie__link--instagram" target="blank" href="https://www.instagram.com/shopsgods/"><i
                     class='bx bxl-instagram'></i></a>
-            <a class="pie__link--twitter" href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
-            <a class="pie__link--maps"
-                href="https://www.google.com.ar/maps/place/Villa+del+Totoral,+C%C3%B3rdoba/@-30.7081422,-64.1045078,13z/data=!3m1!4b1!4m5!3m4!1s0x943251cbe0c28541:0x8057f1e4576e7625!8m2!3d-30.7060508!4d-64.0675449"><i
+            <a class="pie__link--twitter" target="blank" href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
+            <a class="pie__link--maps" target="blank" href="https://www.google.com.ar/maps/place/Villa+del+Totoral,+C%C3%B3rdoba/@-30.7081422,-64.1045078,13z/data=!3m1!4b1!4m5!3m4!1s0x943251cbe0c28541:0x8057f1e4576e7625!8m2!3d-30.7060508!4d-64.0675449"><i
                     class='bx bx-map-alt'></i></a>
         </div>
         <div class="pie__texto">

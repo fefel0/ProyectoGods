@@ -61,14 +61,18 @@ img {
   width: 100%;
   left: 10rem; }
 
+.navegador {
+  background-color: #003566; }
+
+.nav__ico {
+  display: none; }
+
 .navegador__items {
   display: flex;
   justify-content: space-around;
   flex-basis: 100%;
-  background-color: #003566;
-  height: 5rem;
-  align-items: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 1rem; }
   .navegador__items a {
     font-size: 2rem;
     font-weight: 2rem; }
@@ -88,6 +92,35 @@ img {
 @media (max-width: 1024px) {
   .headerNav__logo {
     display: none; } }
+
+@media (max-width: 510px) {
+  #btn-menu:checked ~ .navegador__items {
+    left: 0; }
+  .nav__ico {
+    font-size: 3.5rem;
+    display: block; }
+  #btn-menu {
+    display: none; }
+  .navegador {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: end;
+    width: 100%;
+    text-align: end; }
+  .navegador__items {
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    justify-content: space-around;
+    text-align: center;
+    z-index: 1000;
+    background-color: #003566;
+    top: 15%;
+    width: 100%;
+    padding: 3rem;
+    left: -100%; }
+    .navegador__items li {
+      margin: 1rem; } }
 
 /*  ---lista desplegable hoodies--- */
 ul li {
@@ -381,7 +414,7 @@ span {
   background-color: #001D3D; }
 
 .boton:hover {
-  height: 100%;
+  height: 150%;
   width: 90%;
   background-color: #001D3D;
   color: #ffd60a;
