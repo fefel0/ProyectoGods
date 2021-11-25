@@ -130,6 +130,12 @@ img{
         }
     }
 }
+@media (max-width: 380px){
+    .navegador__items{
+        top: 12%;
+    }
+}
+
 
 /*  ---lista desplegable hoodies--- */
 
@@ -257,6 +263,11 @@ $redes:(
 @each $key, $value in $redes {
     .pie__link--#{$key}:hover{
         color:$value;
+    }
+}
+@media (max-width: 320px){
+    .pie__barra{
+        font-size: 1.2rem;
     }
 }
 
@@ -453,7 +464,7 @@ span {
     font-family: 'Rajdhani', sans-serif; 
     transition-duration: 1.5s;
 }
-@media (max-width: 1024px){
+@media (max-width: 900px){
     .cajaContacto__imagen{
         display: none;
     }
